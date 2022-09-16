@@ -19,14 +19,16 @@
                 <form action="{{ action_url }}" method="post" enctype='multipart/form-data'>
                     <h2>Введите данные работника</h2>
                     <label for="id_image">Выберите файл</label>
-                    <input type="file" name="image" accept="image/*" required="" id="id_image" placeholder="Выберите файл">
-                    <input  type="text" placeholder="First name" required>
+                    <input type="file" name="image" accept="image/*" required="" id="id_image" placeholder="Выберите файл" >
+                    <img id="obj">
+                    <input   type="text" placeholder="First name" required>
                     <input  type="text" placeholder="Last name" required>
                     <input  type="text" placeholder="Dad name" required>
                     <input  type="text" placeholder="Birth date" required>
-                    <button type="submit">Подтвердить</button>
+                    <button class="button" type="submit">Подтвердить</button>
                 </form>
             </div>
       </main>
+      <script src="script.js"></script>
   </body>
   </html>
