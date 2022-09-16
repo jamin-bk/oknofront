@@ -1,0 +1,180 @@
+body {
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------------------------------------------- */
+.main-choose { 
+/* Главная секция с контентом в файле main */
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:140px;
+}
+/* Общие характеристики для трех блоков в файле main */
+.main-choose a{
+    margin: 20px;
+    /* background-color: rgb(255, 187, 0); */
+    text-align: center;
+    font-size: 16px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+.block-content figure{
+/* Свойства изображений для блока выбора в файле Main */
+    height:160px;
+    border:1px solid rgb(255, 187, 0);
+    border-radius: 50%;
+}
+
+.block-content img{
+    height:100px;
+    padding:30px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+.block-content {
+    display: table;
+    background-color: white;
+    border:1px solid rgb(228, 177, 37);
+
+    border-radius:20px;
+}
+/* ----------------------------------------------------------------------------------------------- */
+.aut {
+    width:500px;
+    height:340px;
+    margin:0 auto;
+    margin-top: 120px;
+}
+form {
+    display:table-cell;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+form h2 {
+    margin-top:0;
+}
+
+input[type="text"] {
+    border-radius:6px;
+    padding:8px;
+    font-size: 16px;
+    background-color: rgb(235, 233, 233);
+    border:1px solid rgb(228, 177, 37);
+}
+
+button {
+    border-radius:6px;
+    padding:8px;
+    font-size: 16px;
+    background-color: rgb(245, 188, 30);
+    transition: 1s ease background-color;
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(253, 156, 11);
+}
+
+/* ---------------------------------CREATE--------------------------------------------------- */
+
+
+.create {
+    margin:60px auto;
+}
+.create form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:40px;
+}
+
+.create input[type="text"],
+.create button {
+    margin:10px;
+}
+
+
+.create input[name="image"] {
+    display:none;
+}
+.create label[for="id_image"] {
+    border-radius:6px;
+    padding:8px;
+    margin:10px;
+    font-size: 16px;
+    background-color: rgb(245, 188, 30);
+    border:none;
+    color:white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.create input[type=file]:focus  label {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline: 1px solid #0078d7;
+}
+/* --------------------------PROFYLE------------------------------------------------ */
+.profyle {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:50px;
+    margin: 0 auto;  
+}
+.profyle p {
+    display: inline;
+    border-bottom:1px solid rgb(228, 177, 37);
+}
+.block-content-profyle {
+    display: table;
+    background-color: white;
+    border:2px solid rgb(228, 177, 37);
+    margin: 15px auto;
+    border-radius:20px;
+    font-size: 16px;
+    font-weight: 500;  
+}
+/* ---------------------------------------------------------------------------------- */
+.block-content h2 {
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.info {
+    margin: 0 40px 0 40px;
+    padding: 10px;
+    background-color: whitesmoke;
+    width:fit-content;
+    position: relative;
+    border-radius: 0 7px 7px 0;
+}
+
+.info a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    height: calc(2rem + 2px);
+    
+}
+.info a:hover {
+    text-decoration: underline;
+}
+.info::before {
+    display:block;
+    position:absolute;
+    top:0;
+    left:-7px;
+    content: "";
+    border-radius: 3px;
+    background-color: rgb(245, 188, 30);
+    height: 100%;
+    width: 7px;
+    border-radius: 5px 0 0 5px;
+}
+.info p {
+    margin: -2px 0 0 0;
+}

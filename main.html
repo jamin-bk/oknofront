@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Единое окно</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="main-choose">
+            <a class="urls-main" href="">
+                <div class="block-content"> 
+                    <figure>
+                        <img src="images/university.svg">
+                    </figure>
+                    <h2>Для министерства</h2>
+                </div>
+            </a>
+            <a class="urls-main" href="{% url 'get_token' %}">
+                <div class="block-content">
+                    <figure>
+                        <img src="images/university.svg">
+                    </figure>
+                    <h2>Для министерства</h2>
+                </div>
+            </a>
+            <a class="urls-main" href="{% url 'view_user' %}">
+                <div class="block-content">
+                    <figure>
+                        <img src="images/university.svg">
+                    </figure>
+                    <h2>Для министерства</h2>
+                </div>
+            </a>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
